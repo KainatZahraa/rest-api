@@ -1,6 +1,4 @@
-Here's your README for Task 1:
-
-```markdown
+```
 # Task 1 — Student Management System API
 
 A RESTful API built with Node.js, Express, and MongoDB to manage student records for a university.
