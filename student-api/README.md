@@ -1,4 +1,3 @@
-```
 # Task 1 — Student Management System API
 
 A RESTful API built with Node.js, Express, and MongoDB to manage student records for a university.
@@ -11,18 +10,17 @@ A RESTful API built with Node.js, Express, and MongoDB to manage student records
 - dotenv
 
 ## Project Structure
-```
-student-api/
-├── models/
-│   └── Student.js
-├── controllers/
-│   └── studentController.js
-├── routes/
-│   └── studentRoutes.js
-├── .env
-├── server.js
-└── package.json
-```
+
+    student-api/
+    ├── models/
+    │   └── Student.js
+    ├── controllers/
+    │   └── studentController.js
+    ├── routes/
+    │   └── studentRoutes.js
+    ├── .env
+    ├── server.js
+    └── package.json
 
 ## Setup Instructions
 
@@ -42,10 +40,9 @@ npm install
 ```
 
 4. Create a `.env` file and add:
-```
-PORT=5000
-MONGO_URI=your_mongodb_atlas_connection_string
-```
+
+    PORT=5000
+    MONGO_URI=your_mongodb_atlas_connection_string
 
 5. Run the server
 ```bash
@@ -59,9 +56,8 @@ Server will run on `http://localhost:5000`
 ## API Endpoints
 
 ### Create Student
-```
-POST /api/students
-```
+**POST** `/api/students`
+
 Body:
 ```json
 {
@@ -75,49 +71,31 @@ Body:
 ```
 
 ### Get All Students
-```
-GET /api/students
-```
+**GET** `/api/students`
 
 ### Filter by Department
-```
-GET /api/students?department=Computer Science
-```
+**GET** `/api/students?department=Computer Science`
 
 ### Pagination
-```
-GET /api/students?page=1&limit=2
-```
+**GET** `/api/students?page=1&limit=2`
 
 ### Search by Name
-```
-GET /api/students/search?name=ali
-```
+**GET** `/api/students/search?name=ali`
 
 ### Get Student by ID
-```
-GET /api/students/:id
-```
+**GET** `/api/students/:id`
 
 ### Full Update
-```
-PUT /api/students/:id
-```
+**PUT** `/api/students/:id`
 
 ### Partial Update
-```
-PATCH /api/students/:id
-```
+**PATCH** `/api/students/:id`
 
 ### Deactivate Student
-```
-PATCH /api/students/:id/deactivate
-```
+**PATCH** `/api/students/:id/deactivate`
 
 ### Delete Student
-```
-DELETE /api/students/:id
-```
+**DELETE** `/api/students/:id`
 
 ---
 
@@ -141,8 +119,3 @@ DELETE /api/students/:id
 - 400 — Bad Request
 - 404 — Not Found
 - 500 — Internal Server Error
-```
-
----
-
-Create a file called `README.md` inside your `student-api` folder, paste this in, save it, commit and push to GitHub. Then we'll start Task 2!
